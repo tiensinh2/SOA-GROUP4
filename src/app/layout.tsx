@@ -4,6 +4,7 @@ import "./globals.css";
 import Head from "next/head";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 
@@ -28,13 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className="font-poppins"
-      >
-        <Header />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} font-sans bg-lightColor text-shop-dark-blue`}
+        >
+          <Header />
+          <main className="min-h-[calc(100vh-136px)] flex-1 bg-chart-2">{children}</main>
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

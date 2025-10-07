@@ -1,11 +1,10 @@
 import { Button } from '@/components/ui/button';
 import Container from '@/components/ui/Container';
+import HomeBanner from '@/components/ui/HomeBanner';
 import React from 'react';
 const Home=() => {
   return (<Container className='bg-shop-light-pink'>
-    <h2 className= "text-xl font-semibold"> Home</h2>
-    <p>abcxyz</p>
-    <Button size="lg" variant="default">NEW BUTTON</Button>
+    <HomeBanner/>
   </Container>);
 };
 export default Home; 
