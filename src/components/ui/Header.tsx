@@ -13,7 +13,7 @@ import SignIn from "./SignIn"
 const Header = async() => {
     const user = await currentUser();
     console.log(user, 'user');
-    return <header className="sticky top-0 z-50 py-5 bg-white/70 backdrop-blur-md"> 
+    return <header className="sticky top-0 z-50 py-5 bg-shop-dark backdrop-blur-md"> 
         <Container className="flex items-center 
         justify-between text-shop-light-gray-text">
             <div className="w-auto md:w-1/3 flex items-center justify-start md:gap-0">

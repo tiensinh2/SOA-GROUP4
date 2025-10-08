@@ -35,7 +35,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} font-sans bg-lightColor text-shop-dark-blue`}
         >
           <Header />
-          <main className="min-h-[calc(100vh-136px)] flex-1 bg-chart-2">{children}</main>
+          <main className="min-h-[calc(100vh-136px)] flex-1 bg-shop-dark-gray">{children}</main>
           <Footer />
         </body>
       </html>

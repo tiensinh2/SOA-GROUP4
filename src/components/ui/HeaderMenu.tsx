@@ -15,8 +15,8 @@ const HeaderMenu = () => {
         <Link
           key={item?.title}
           href={item?.href}
-          className={`hover:text-shop-dark-blue hoverEffect relative group ${
-            pathname === item?.href ? "text-shop-dark-blue" : ""
+          className={`hover:text-chart-2 hoverEffect relative group ${
+            pathname === item?.href ? "text-chart-1" : ""
           }`}
         >
           {item?.title}
